@@ -15,6 +15,7 @@
 
 (defn items []
   [:ul
+   ;; doall or into is necessary to evaluate lazy sequence
    (doall (for [item (:items @app-state)]
             [:li {:key item
                   :class (if (= (:selected @app-state) item) "selected" "not-selected")

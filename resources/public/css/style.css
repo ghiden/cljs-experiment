@@ -1,8 +1,10 @@
 /* some style */
 li {
     list-style: none;
+    cursor: pointer;
 }
 
 li.selected {
     text-decoration: underline;
+    color: red;
 }
